@@ -3,11 +3,26 @@
 }
 
 html {
-    background: url(//css-tricks.com/examples/OnePageResume/images/noise.jpg)
+    background-color: #e0e0e0
 }
 
 body {
-    margin: 2.2rem
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 3.3em 2.2em 1.1em 2.2em;
+    background-color: #00bfa5;
+    color: #ffffff;
+}
+
+section {
+    padding: 1.1em 2.2em 0 2.2em;
+}
+
+footer {
+    padding: 0 2.2em 2.2em 2.2em;
 }
 
 div#resume {
@@ -23,7 +38,6 @@ div#resume h1 {
     font-size: 42px;
     font-weight: bold;
     letter-spacing: -2px;
-    border-bottom: 1px solid #999;
     line-height: 50px
 }
 
@@ -48,21 +62,47 @@ div#resume p {
     margin: 0 0 16px 0
 }
 
+div#introduce {
+    max-width: 70%;
+}
+
+div#introduce p {
+    display: inline-block;
+    width: 45%;
+    white-space: pre-wrap;
+}
+
+div#resume span {
+    color: #34495e;
+    min-width: 100px;
+    display: inline-block;
+}
+
 div#resume a {
-    color: #999;
+    color: #009a61;
     text-decoration: none;
     border-bottom: 1px dotted #999
 }
 
 div#resume a:hover {
     border-bottom-style: solid;
-    color: #000
+    color: #e06666
 }
 
-div#resume p.objective {
-    font-family: Georgia, serif;
-    font-style: italic;
-    color: #666
+div#resume article {
+    font-family: Georgia, KAITI, serif;
+    color: #666;
+    font-size: 1.2em;
+    padding-bottom: 1em;
+}
+
+div#resume article i {
+    color: #e06666;
+    font-style: normal;
+}
+
+div#resume article p {
+    text-indent: 2em;
 }
 
 div#resume dt {
@@ -106,6 +146,11 @@ div#resume img {
         position: static;
         display: block;
         margin-top: 2px
+    }
+    div#introduce p {
+        display: block;
+        width: 100%;
+        white-space: nowrap;
     }
 }
 
@@ -156,7 +201,7 @@ div#resume img {
 
 @media screen and (max-width:320px) {
     body {
-        margin: 0
+        margin: 0;
     }
     img {
         margin: 0;
@@ -172,3 +217,63 @@ div#resume img {
         margin-right: 20px
     }
 }
+
+.progress {
+    width: 300px;
+    background: #bbb;
+    display: inline-block;
+}
+.rate {
+    height: 15px;
+    border-radius: 5px;
+}
+.rate-1 {
+    width: 10%;
+    background-color: #C2024F;
+}
+.rate-2 {
+    width: 20%;
+    background-color: #C2024F;
+}
+.rate-3 {
+    width: 30%;
+    background-color: #FCB13F;
+}
+.rate-4 {
+    width: 40%;
+    background-color: #FCB13F;
+}
+.rate-5 {
+    width: 50%;
+    background-color: #04BBBF;
+}
+.rate-6 {
+    width: 60%;
+    background-color: #04BBBF;
+}
+.rate-7 {
+    width: 70%;
+    background-color: #04BBBF;
+}
+.rate-8 {
+    width: 80%;
+    background-color: #34c84a;
+}
+.rate-9 {
+    width: 90%;
+    background-color: #34c84a;
+}
+.rate-10 {
+    width: 100%;
+    background-color: #34c84a;
+}
+.round-conner {
+    height: 15px;
+    border-radius: 5px;
+}
+
+strong {
+    display: inline-block;
+    min-width: 100px;
+}
+

@@ -7,55 +7,152 @@
 </head>
 <body>
 <div id="resume">
-    <img src="profile_photo.png" alt="张海龙的头像">
-    <h1>张海龙</h1>
-    <p>City: <a href=#>南京</a>
-    <p>Web: <a href='http://tuobaye.com' target="view_window">tuobaye.com</a>
-    <p>Email: <a href='mailto:tuobaye0711@163.com'>tuobaye0711@163.com</a>
-    <p id="objective">你好，我叫张海龙，是一名前端工程师。
-        <dl>
-            <dt>Education
+    <header>
+        <img src="profile_photo.png" alt="张海龙的头像">
+        <h1>张海龙</h1>
+    </header>
+    <section>
+        <div id="introduce">
+            <p><span>坐标：</span><a>南京</a></p>
+            <p><span>微信：</span><a>tuobaye0711</a></p>
+            <p><span>个人网站：</span><a href='http://tuobaye.com' target="view_window">http://tuobaye.com</a></p>
+            <p><span>github：</span><a href='https://github.com/tuobaye0711'>https://github.com/tuobaye0711</a></p>
+            <p><span>邮箱：</span><a href='mailto:tuobaye0711@163.com'>tuobaye0711@163.com</a></p>
+            <p><span>英语水平：</span><a>CET-6</a></p>
+        </div>
+        <article>
+            <p>你好，我叫张海龙，是一名web前端工程师，现就职于中兴通讯。独立开荒并负责过多个公司内部网站，可以通过<i>JS(angularJS/Vue.js)-Nginx-Node.js(Express)-mysql/mongoDB技术栈</i>独立开发端对端产品。
+            </p>
+            <p>
+                我对技术抱有强烈的好奇心，具有很强的自我学习能力。爱游戏，爱洗碗（雾），更爱在开源社区追逐大神们的脚步，以期待总有一天能成为一个<i>写出让人用到我的代码/产品/开源项目时会不自觉的发出一声“哇，真牛逼！”</i>的人。
+            </p>
+        </article>
+        <dl id="education">
+            <dt>教育经历</dt>
             <dd>
-                <h2>Oxford University</h2>
-    <p><strong>Major:</strong> Applied Mathematics<br/>
-        <strong>Minor:</strong> Romance Languages</p>
-    </dl>
-    <dl>
-        <dt>Skills
-        <dd>
-            <h2>Office Skills</h2>
-            <p>Office and records management, database administration, event organization, customer support, travel coordination
-            <h2>Computer skills</h2>
-            <p>Microsoft productivity software (Word, Excel, etc), Adobe Creative Suite, Windows
-    </dl>
-    <dl>
-        <dt>Experience
-        <dd>
-            <h2>Consulting Criminal<span>London 1892 – present</span></h2>
-            <ul>
-                <li>Development within the criminal underworld
-                <li>Conducted negotiations with several rogue governments
-            </ul>
-            <h2>The Coldstream Guards<span>Army Coach, London 1889 – 1888</span></h2>
-            <ul>
-                <li>Recruiting, training and terrorizing young men.
-            </ul>
-            <h2>Oxford University<span>Professor of Mathematics 1885 – 1888</span></h2>
-            <ul>
-                <li>Published papers in binomials, asteroid dynamics and game theory
-                <li>Intimidated students
-            </ul>
-        </dd>
-    </dl>
-    <dl>
-        <dt>Hobbies
-        <dd>World domination, Social Manipulation, Murder Most Foul
-    </dl>
-    <dl>
-        <dt>References
-        <dd>Available on request
-    </dl>
-    <p class="objective" style="margin-top:2rem;">(<a href="http://thenewcode.com/553/Build-A-Responsive-Web-Résumé">Return to the original blog article</a>.)
+                <h2>南京邮电大学<span>2013-2016</span></h2>
+                <p>
+                    <strong>学历:</strong> 硕士<br/>
+                    <strong>专业:</strong> 电子与通信工程<br/>
+                    <strong>荣誉&证书:</strong> 优秀研究生，企业奖学金，CCNA
+                </p>
+                <h2>青岛大学<span>2008-2012</span></h2>
+                <p>
+                    <strong>学历:</strong> 学士<br/>
+                    <strong>专业:</strong> 通信工程
+                </p>
+            </dd>
+        </dl>
+        <dl id="skills">
+            <dt>技术栈</dt>
+            <dd>
+                <h2>主要技能</h2>
+                <div>
+                    <strong>HTML:</strong>
+                    <div class="progress round-conner">
+                        <div class="rate rate-8"></div>
+                    </div>
+                </div>
+                <div>
+                    <strong>CSS:</strong>
+                    <div class="progress round-conner">
+                        <div class="rate rate-5"></div>
+                    </div>
+                </div>
+                <div>
+                    <strong>JavaScript:</strong>
+                    <div class="progress round-conner">
+                        <div class="rate rate-9"></div>
+                    </div>
+                </div>
+                <div>
+                    <strong>Node.js:</strong>
+                    <div class="progress round-conner">
+                        <div class="rate rate-6"></div>
+                    </div>
+                </div>
+                <div>
+                    <strong>Vue.js:</strong>
+                    <div class="progress round-conner">
+                        <div class="rate rate-7"></div>
+                    </div>
+                </div>
+                <div>
+                    <strong>AngularJS 1:</strong>
+                    <div class="progress round-conner">
+                        <div class="rate rate-7"></div>
+                    </div>
+                </div>
+                <div>
+                    <strong>python:</strong>
+                    <div class="progress round-conner">
+                        <div class="rate rate-3"></div>
+                    </div>
+                </div>
+                <p>&nbsp;</p>
+                <h2>其他技能</h2>
+                <p>Git、SVN、Webpack、Parcel、mysql、mongoDB、Nginx、Express等</p>
+            </dd>
+        </dl>
+        <dl id="work-experience">
+            <dt>工作经历</dt>
+            <dd>
+                <h2>中兴通讯 web前端工程师<span>2016.5 毕业至今</span></h2>
+                <p>
+                    在无线产品经营部-无线技术部，负责中兴开发者社区子版块的开发工作。最初时负责前端部分开发，后开发范围逐步渗透到后端和数据库。工作中不断思考最优解，学习和积累是工作的主旋律
+                </p>
+            </dd>
+        </dl>
+        <dl id="projects">
+            <dt>项目经历</dt>
+            <dd>
+                <h2>GPU分布平台<span>2017.8 至今</span></h2>
+                <p>
+                    GPU分布平台是公司级的深度学习和并行计算平台，对公司内开放GPU能力，使用 Tesla P100 和 titan
+                    Xp卡，支持TensorFlow、Caffee等多种框架，为公司自研AI算法建立了基准平台和用户群。
+                </p>
+                <p>
+                    其中，我独自负责GPU分布平台WEB侧的前端、后端、数据库的开发及维护工作。使用Angular1 + Nginx + Node.js + mysql技术栈。
+                </p>
+                <h2>中兴开发者社区-能力开放平台<span>2017.3 - 2017.8</span></h2>
+                <p>
+                    能力开放平台类似于各种web应用的门户网站。由于中兴内部部门众多，各部门自行研发的一些工具其他部门并不知晓，无法做到有效的复用。能力开放平台的作用就是把各个部门的能力暴露出去，复用起来。
+                </p>
+                <p>
+                    这个项目从技术选型阶段我就开始参与，通过对比最终选定了Vue.js +
+                    element-ui的框架组合。后台使用Node.js，中间使用反向代理服务器Nginx转发。从这个项目起，开始使用Node.js，逐步涉及后台接口的封装工作。
+                </p>
+                <h2>中兴开发者社区-活动板块<span>2016.11 - 2017.3</span></h2>
+                <p>
+                    活动版块是中兴内部举办活动或者大会时的线上报名点，对标的活动行的网站。
+                </p>
+                <p>
+                    我主要负责活动版块前端的开发工作。活动版块是一个常见的前端架构，由列表页、详情页、发布页、后台管理页。像素级还原UI设计师提供的高保真设计图。使用的技术栈主要是Angular1 +
+                    bootstrap。
+                </p>
+                <h2>DevOps工具链<span>2016.5 - 2016.11</span></h2>
+                <p>
+                    入职初期，主要在熟悉和学习，用robot-framework为前端代码写了一套自动化测试用例。在前端上，对流水线展示界面进行了优化，向前接入JIRA，完善了定时刷新机制。
+                </p>
+            </dd>
+        </dl>
+        <dl id="personal-project">
+            <dt>个人项目</dt>
+            <dd>
+                <h2>zEditor<span><a href="https://github.com/tuobaye0711/zEditor">https://github.com/tuobaye0711/zEditor</a></span></h2>
+                <p>
+                    一款超轻量级富文本编辑器
+                </p>
+                <h2>code-printer<span><a href="https://github.com/tuobaye0711/code-printer">https://github.com/tuobaye0711/code-printer</a></span></h2>
+                <p>
+                    打印并展示你的代码特效，同时支持CSS和JS的实现
+                </p>
+            </dd>
+        </dl>
+    </section>
+    <footer>
+        <p class="objective" style="margin-top:2rem;">(<a href="http://tuobaye.com">感谢您花费宝贵的时间阅读我的简历~</a>.)
+    </footer>
 </div>
 </body>
 </html>
