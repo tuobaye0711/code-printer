@@ -1,0 +1,29 @@
+{
+  "name": "code-printer",
+  "version": "1.0.0",
+  "description": "print and show the animation of your code",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack",
+    "server": "webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuobaye0711/code-printer.git"
+  },
+  "keywords": [
+    "resume"
+  ],
+  "author": "zhleven",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tuobaye0711/code-printer/issues"
+  },
+  "homepage": "https://github.com/tuobaye0711/code-printer#readme",
+  "devDependencies": {
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.0"
+  },
+  "dependencies": {}
+}
