@@ -1,7 +1,7 @@
 # code-printer
 print and show the animation of your code | 打印并展示你的代码特效
 
-[demo](http://tuobaye.com/resume)
+[demo: my resume](http://tuobaye.com/resume)
 
 ***
 
