@@ -76,7 +76,7 @@ var title = document.createElement("h1");
 title.id = "title";
 
 /* 恩，起个名字 */
-title.innerHTML = "<a>这是<em>张海龙</em>的个人简介</a>";
+title.innerHTML = "<a>这是<em>code-printer</em>的项目地址</a>";
 
 /* 做点小动作 */
 title.childNodes[0].href = "https://github.com/tuobaye0711/code-printer";
@@ -132,11 +132,7 @@ document.body.appendChild(title);
  * 希望好心的你能star&fork一下哦
  */
 
-/*
- * 调整一下布局
- *                       
- * 我准备进入正题了
- */
+/* 调整一下布局 */
 
 #my-code { left: 20px; width: calc(50% - 30px); }
 
@@ -154,13 +150,13 @@ document.body.appendChild(title);
     0px 4px 0px 2px rgba(0,0,0,0.1);
 }
 ~\`
-/* 这部分还得用JS来实现 */
+/* 接下来展示一个拓拔野的简历，这部分还得用JS来实现 */
 
 /* 首先，创建一个iframe */
 var iframe = document.createElement("iframe");
 
-/* 把我的简历附上 */
-iframe.src = "/resume/lndex.html";
+/* 把拓拔野的简历附上 */
+iframe.src = "resume/lndex.html";
 
 /* 附上ID */
 iframe.id = "iframe"
@@ -168,59 +164,35 @@ iframe.id = "iframe"
 /* 加到DOM上 */
 document.body.appendChild(iframe); ~
 \`
-/* 上吧皮卡丘！ */
+/* 出现吧 */
 #iframe { left: calc(50% + 10px); }
                                              
 /*
- * emmm...                            
+ * 这就是我高中时期曾经疯狂迷恋的书籍
  *   
- * 等等！                                             
+ * 那时曾经每期必定追着奇幻看搜神记的连载
  *                   
- * 我好像拿错东西了...
+ * 现在却一本也找不到了
  *
- * 这是我的照骗（逃）
+ * 心中只剩下怀念
  *
- * 赶紧换掉，换掉！                                            
+ * 和为之注册的个人域名 tuobaye.com
  */
 ~\`
-document.getElementById("iframe").src = "/resume/index.html"; ~\`
+document.getElementById("iframe").src = "resume/index.html"; ~\`
 
 /*
- * 很好，这正是我要的效果                                            
+ * 这是拓拔野
  *                        
- * 如果您想下载我的简历怎么办                                            
+ * 一个我做梦都能梦到的男人...
  *         
- * 别急
+ * 您可以fork我的项目，把这个地方修改成自己的简历
  *
- * 给您加个下载链接                                           
+ * 就是一份炫酷的自我介绍啦    
+ *
+ * 就先到这儿吧，感谢您的耐心观看
  */
-
- \`
- var download_link = document.createElement("a");
- download_link.id = "download_link";
- download_link.innerHTML = "简历下载";
- download_link.href = "/resume/resume.pdf";
- download_link.download = "张海龙_前端开发";
  
- document.body.appendChild(download_link);
- 
- ~\`
- 
- /* 最后简单调整一下 */
-  
-#download_link {
-  position: fixed;
-  top: 0;
-  right: 10px;
-  z-index: 15;
-  font-size: 1.1em;
-  color: #d17aff;
-  line-height: 1;
-  padding: 10px;
-}
- 
-感谢您的耐心观看٩(๑>◡<๑)۶
-
 `;
 
 
