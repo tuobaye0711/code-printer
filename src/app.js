@@ -1,4 +1,4 @@
-(function () {
+(function() {
     const codes = require('./code.js');
 
     // 速度控制
@@ -7,7 +7,7 @@
     let $body = document.getElementsByTagName("body")[0];
 
     // 简便的创建方法，可以直接附加id
-    let createElement = function (tag, id) {
+    let createElement = function(tag, id) {
         let el = document.createElement(tag);
         if (id) {
             el.id = id;
@@ -38,7 +38,7 @@
     let prevSlash = false;
 
     // 脚本语法高亮处理
-    let jsHighlight = function (string, which) {
+    let jsHighlight = function(string, which) {
         let s;
 
         // 数字结尾时，给数字两端封上<em class="int"></em>的标签
@@ -82,7 +82,7 @@
     };
 
     // 样式语法高亮处理
-    let cssHighlight = function (string, which) {
+    let cssHighlight = function(string, which) {
         let regular_match, formatted_string, s;
 
         // 数字结尾时，给数字两端封上<em class="int"></em>的标签
@@ -134,7 +134,7 @@
     let unformatted_code = "";
 
     // 打印单个字符
-    let printChar = function (which) {
+    let printChar = function(which) {
         let char, formatted_code, prior_block_match, prior_comment_match, script_tag;
 
         // 通过 ` 来切换 CSS/JS 代码
@@ -186,12 +186,12 @@
     };
 
     // 遍历打印全部codes
-    let printCodes = function (message, index, interval) {
+    let printCodes = function(message, index, interval) {
         if (index < message.length) {
             // 自动滚动到底部
             $code_pre.scrollTop = $code_pre.scrollHeight;
             printChar(message[index++]);
-            return setTimeout((function () {
+            return setTimeout((function() {
                 return printCodes(message, index, interval);
             }), speed);
         }

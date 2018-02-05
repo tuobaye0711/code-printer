@@ -168,15 +168,15 @@ document.body.appendChild(iframe); ~
 #iframe { left: calc(50% + 10px); }
                                              
 /*
- * 这就是我高中时期曾经疯狂迷恋的书籍
+ * 这就是我高中时期喜欢的书籍
  *   
- * 那时曾经每期必定追着奇幻看搜神记的连载
+ * 不知道在座的有没有人看过呢？
  *                   
- * 现在却一本也找不到了
+ * 现在已经一本也找不到了
  *
  * 心中只剩下怀念
  *
- * 和为之注册的个人域名 tuobaye.com
+ * 我的个人域名tuobaye.com就是搜神记中主角名字
  */
 ~\`
 document.getElementById("iframe").src = "resume/index.html"; ~\`
@@ -184,7 +184,7 @@ document.getElementById("iframe").src = "resume/index.html"; ~\`
 /*
  * 这是拓拔野
  *                        
- * 一个我做梦都能梦到的男人...
+ * 我为他做了一份简历当做Demo
  *         
  * 您可以fork我的项目，把这个地方修改成自己的简历
  *
